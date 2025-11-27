@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TikTok Downloader — No Watermark</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="brand">
+        <h1>TikSaver</h1>
+        <p>Download video TikTok tanpa watermark — cepat & mudah</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <label for="url">Paste link TikTok</label>
+      <div class="input-row">
+        <input id="url" placeholder="https://www.tiktok.com/..." />
+        <button id="btn" class="btn">Download</button>
+      </div>
+
+      <div id="status" class="status"></div>
+
+      <div id="preview" class="preview" hidden>
+        <video id="video" controls playsinline></video>
+        <div class="meta">
+          <p id="title"></p>
+          <a id="downloadBtn" class="btn secondary" download>Download Video</a>
+        </div>
+      </div>
+
+      <div class="footnote">
+        <small>Jika video gagal diambil, coba gunakan opsi backend (lebih stabil).</small>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Built by Elbert — gunakan sesuai ketentuan TikTok.</small>
+    </footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+  </html>
